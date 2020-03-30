@@ -38,3 +38,7 @@ getLength([1, [2, 3]]) ➞ 3
 getLength([1, [2, [3, 4]]]) ➞ 4
 getLength([1, [2, [3, [4, [5, 6]]]]]) ➞ 6
 getLength([1, [2], 1, [2], 1]) ➞ 5
+
+
+var myArray = new Array ([1,2], [3,4] 
+
