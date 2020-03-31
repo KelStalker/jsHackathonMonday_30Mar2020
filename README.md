@@ -5,7 +5,7 @@ During our Hack-A-Thon on Monday March 30, all students must provide solutions w
 <!-- A minimum of 3 medium difficulty rated problems
    - ES6/ECMA2015 syntax must be used for all solutions
    - At least one of your solutions must use a template literal **CHECK**
-   - At least one of your solutions must include a for OR while loop **CHECK**
+   - At least one of your solutions must include a for OR while loop 
    - At least one of your solutions must include a class  **CHECK**
    - At least one of your solutions must include an array **CHECK**
    - At least one of your solutions must include an arrow function 
@@ -21,7 +21,7 @@ Cut off point for criteria requirements: 11:59 PM on Monday, March 30
 
 Submissions: Please submit a link of your GitHub repository to techc@ualberta.ca by 11:59 PM on Monday, March 30. 
 
-*** Edabit challenge: Length of a Nexted Array (Type: js Difficulty: hard so worth 2 medium) ***
+*** Edabit challenge 1&2 (hard difficulty = 2 medium?): Length of a Nested Array ***
 
 *** Instructions ***
 Write a function that returns the total number of non-nested items in a nested array.
@@ -35,15 +35,21 @@ getLength([1, [2], 1, [2], 1]) ➞ 5
 var myArray = new Array ([1,2], [3,4] 
 
 *** My Solution ***
-js line 18: console.log(array2.flat(Infinity).length);
+js line 17: console.log(array2.flat(Infinity).length);
 
 ***---------------------------------------------------------***
 
 
-***---------------------------------------------------------***
+*** Edabit challenge: Converting Objects to Arrays ***
 
+Write a function that converts an object into an array, where each element represents a key-value pair.
+Example:
 
-***---------------------------------------------------------***
+toArray({ a: 1, b: 2 }) ➞ [["a", 1], ["b", 2]]
 
+*** My Solution ***
+function toArray(obj) {
+	return Object.entries(obj);
+}
 
-***---------------------------------------------------------***
+Implemented in my class called 'Instruments' of which I hardcoded 3 instances starting on js line 28
