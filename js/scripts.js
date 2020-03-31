@@ -28,12 +28,12 @@ console.log(numbers.map(Math.sqrt));
 // Convert an Object to an Array
 
 // class and class definition here
-class Instrument{
-    constructor(type, section){
-        this.type=type;
-        this.section=section;
+class Instrument {
+    constructor(type, section) {
+        this.type = type;
+        this.section = section;
     }
-} 
+}
 
 // instance of the class (also an object)
 let drum = new Instrument("drums", "percussion");
@@ -41,7 +41,7 @@ let trumpet = new Instrument("trumpet", "brass");
 let saxaphone = new Instrument("saxaphone", "woodwind");
 // each instance has 2 properties - type/section. eg: The value for type is "drums", the vaulue for section is "percussion"
 
-function getInstrumentObjects(instrument){
+function getInstrumentObjects(instrument) {
     let instArray = [];
     instArray.push(instrument.type);
     instArray.push(instrument.section);
@@ -53,9 +53,8 @@ console.log(`I like to play the ${trumpet.type}. This is what my trumpet looks l
 
 
 // Trying it another way using a 'for' loop, but doesn't quite work right... (but no errors! Hmmm)
-function objectToArray(Instrument){
-    var arrayOfInstruments = [];
-//  
+function objectToArray(Instrument) {
+    var arrayOfInstruments = [];  // should probably declare this outside the function in order to return it
     for (var i in Instrument) {
         arrayOfInstruments.push[i, Instrument[i]];
     }
@@ -64,4 +63,4 @@ function objectToArray(Instrument){
 // NEED TO OUTPUT ARRAY CALLED: arrayOfInstruments but not working inside function,
 // and calling outside the function (line below) doesn't recognize the scope var 'arrayOfInstruments
 
-// console.log("These are all Instruments:", arrayOfInstruments(Instrument));
+// console.log("These are all Instruments:", arrayOfInstruments(objectToArray()));
